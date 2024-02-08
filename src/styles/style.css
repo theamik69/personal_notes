@@ -5,22 +5,24 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgb(246, 241, 233);
   color: rgb(79, 32, 13);
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   margin: 12px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgb(255, 217, 61);
   color: rgb(79, 32, 13);
   border: 1px solid rgb(79, 32, 13);
   border-radius: 4px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgb(79, 32, 13);
   font-weight: bold;
 }
@@ -40,7 +42,6 @@ input::placeholder, textarea::placeholder {
   color: rgb(79, 32, 13);
 }
 
-
 .note-app__body {
   max-width: 1000px;
   margin: 16px auto;
@@ -58,7 +59,8 @@ input::placeholder, textarea::placeholder {
   margin-bottom: 48px;
 }
 
-.note-input input, .note-input textarea {
+.note-input input,
+.note-input textarea {
   display: block;
   width: 100%;
 }
@@ -82,7 +84,7 @@ input::placeholder, textarea::placeholder {
   width: 100%;
   padding: 8px;
   background-color: rgb(255, 132, 0);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: rgb(79, 32, 13);
   border: 1px solid rgb(79, 32, 13);
   border-radius: 4px;
@@ -138,14 +140,15 @@ input::placeholder, textarea::placeholder {
   display: flex;
 }
 
-.note-item__delete-button,.note-item__archive-button {
+.note-item__delete-button,
+.note-item__archive-button {
   display: block;
   width: 100%;
   background-color: rgb(255, 132, 0);
   border: 0;
   border-top: 1px solid rgb(79, 32, 13);
   padding: 8px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   cursor: pointer;
 }
@@ -165,6 +168,35 @@ input::placeholder, textarea::placeholder {
 
 .note-item__delete-button:hover {
   color: rgb(194, 68, 18);
+}
+
+.note-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 100px;
+  background-color: rgb(255, 132, 0);
+  border-top: 5px solid rgb(79, 32, 13);
+}
+
+.note-footer_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.note-footer_icon {
+  width: 30px;
+  height: 30px;
+  color: rgb(79, 32, 13);
+}
+
+.note-footer_icon_group {
+  display: flex;
+  gap: 10px;
 }
 
 @media only screen and (min-width: 500px) {
